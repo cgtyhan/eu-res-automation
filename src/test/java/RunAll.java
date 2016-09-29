@@ -29,7 +29,7 @@ public class RunAll extends BaseTest {
 //
 //        driver = new RemoteWebDriver(new URL(URL), caps);
 
-        System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
         driver = new ChromeDriver();
         driver.manage().timeouts().setScriptTimeout(10, TimeUnit.SECONDS);
         driverWindowMax();
