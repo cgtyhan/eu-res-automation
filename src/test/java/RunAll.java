@@ -21,7 +21,8 @@ import java.util.concurrent.TimeUnit;
 public class RunAll extends BaseTest {
     @BeforeSuite
     public void beforeSuite() throws Throwable {
-        System.setProperty("webdriver.chrome.driver", "/usr/local/share/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+        //System.setProperty("webdriver.chrome.driver", "/usr/local/share/chromedriver");
         driver = new ChromeDriver();
         driver.manage().timeouts().setScriptTimeout(10, TimeUnit.SECONDS);
         driverWindowMax();
