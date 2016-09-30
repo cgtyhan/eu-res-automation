@@ -55,7 +55,7 @@ public class ReservationPage extends Base {
 
     public void clickPurchaseButton() {
         clickWebElement(conf.getPurchaseButton());
-        waitForLoad(5);
+        waitForLoad(10);
     }
 
 
