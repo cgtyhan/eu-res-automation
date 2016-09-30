@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7369ff1-f5a7-4315-8e9c-ace2b17f58be" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ReservationPage/ReservationPage.java" afterPath="$PROJECT_DIR$/src/main/java/ReservationPage/ReservationPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/RunAll.java" afterPath="$PROJECT_DIR$/src/test/java/RunAll.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/selenium.properties" afterPath="$PROJECT_DIR$/src/main/resources/selenium.properties" />
     </list>
     <ignored path="eu-reservation-automation.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,11 +47,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReservationPage.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ReservationPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ReservationPage/ReservationPage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="497">
-              <caret line="52" column="64" selection-start-line="52" selection-start-column="64" selection-end-line="52" selection-end-column="64" />
+              <caret line="52" column="65" selection-start-line="52" selection-start-column="65" selection-end-line="52" selection-end-column="65" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="selenium.properties" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/selenium.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -87,13 +96,13 @@
         <option value="$USER_HOME$/Documents/pi-browser-extension/js/popup.js" />
         <option value="$PROJECT_DIR$/src/test/java/ResultPageTest/ResultPageTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ReservationPageTest/ReservationPageTest.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/selenium.properties" />
         <option value="$PROJECT_DIR$/src/main/java/Base/Base.java" />
         <option value="$PROJECT_DIR$/src/test/java/HomePageTest/HomePageTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/HomePage/HomePage.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/RunAll.java" />
         <option value="$PROJECT_DIR$/src/main/java/ReservationPage/ReservationPage.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/selenium.properties" />
       </list>
     </option>
   </component>
@@ -194,6 +203,10 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -240,6 +253,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ReservationPage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eu-reservation-automation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eu-reservation-automation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -758,7 +789,7 @@
       <workItem from="1475045568751" duration="3140000" />
       <workItem from="1475180626540" duration="156000" />
       <workItem from="1475181220908" duration="2504000" />
-      <workItem from="1475219794875" duration="2059000" />
+      <workItem from="1475219794875" duration="2267000" />
     </task>
     <servers />
   </component>
@@ -795,7 +826,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79403000" />
+    <option name="totallyTimeSpent" value="79611000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1924" height="1038" extended-state="0" />
@@ -1136,13 +1167,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/selenium.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ReservationPageTest/ReservationPageTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -1206,7 +1230,15 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/ReservationPage/ReservationPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="497">
-          <caret line="52" column="64" selection-start-line="52" selection-start-column="64" selection-end-line="52" selection-end-column="64" />
+          <caret line="52" column="65" selection-start-line="52" selection-start-column="65" selection-end-line="52" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/selenium.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
           <folding />
         </state>
       </provider>

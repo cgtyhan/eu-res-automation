@@ -50,7 +50,7 @@ public class ReservationPage extends Base {
 
     public void setCellPhone() {
         findWebElement(conf.getCellPhone()).clear();
-        fillInputFieldWebElement(conf.getCellPhone(), "530200273");
+        fillInputFieldWebElement(conf.getCellPhone(), "5302002731");
     }
 
     public void clickPurchaseButton() {
