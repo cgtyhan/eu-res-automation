@@ -33,7 +33,7 @@ public class HomePageTest extends BaseTest{
         }
         catch (Throwable ex) {
             Assert.fail();
-            logger.info("setOriginTest NOK");
+            logger.error("setOriginTest NOK");
         }
     }
 
@@ -41,30 +41,35 @@ public class HomePageTest extends BaseTest{
     public void setDestinationTest() {
         try {
             homePage.setDestination();
+            logger.info("setDestinationTest OK");
         }
         catch (Throwable ex) {
             Assert.fail();
+            logger.error("setDestinationTest NOK");
         }
     }
 
     @Test (priority = 2)
     public void setDepartureDateTest() {
-//        try {
-//            homePage.setDepartureDate();
-//        }
-//        catch (Throwable ex) {
-//            Assert.fail();
-//        }
-        homePage.setDepartureDate();
+        try {
+            homePage.setDepartureDate();
+            logger.info("setDepartureDateTest OK");
+        }
+        catch (Throwable ex) {
+            Assert.fail();
+            logger.error("setDepartureDateTest NOK");
+        }
     }
 
     @Test (priority = 3)
     public void clickFindTicketTest() {
         try {
             homePage.clickFindTicket();
+            logger.info("clickFindTicketTest OK");
         }
         catch (Throwable ex) {
             Assert.fail(ex.getMessage());
+            logger.error("clickFindTicketTest NOK");
         }
     }
 }

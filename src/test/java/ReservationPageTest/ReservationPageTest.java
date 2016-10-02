@@ -2,6 +2,7 @@ package ReservationPageTest;
 
 import BaseTest.BaseTest;
 import ReservationPage.ReservationPage;
+import org.apache.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -16,15 +17,18 @@ public class ReservationPageTest extends BaseTest {
     @BeforeClass
     public void beforeClass() {
         reservationPage = new ReservationPage(driver);
+        logger = Logger.getLogger(ReservationPageTest.class.getName());
     }
 
     @Test (priority = 0)
     public void setEmailTest() {
         try {
             reservationPage.setEmail();
+            logger.info("setEmailTest OK");
         }
         catch (Throwable ex) {
             Assert.fail();
+            logger.error("setEmailTest NOK");
         }
     }
 
@@ -32,9 +36,11 @@ public class ReservationPageTest extends BaseTest {
     public void setNameTest() {
         try {
             reservationPage.setName();
+            logger.info("setNameTest OK");
         }
         catch (Throwable ex) {
             Assert.fail();
+            logger.error("setNameTest NOK");
         }
     }
 
@@ -42,9 +48,11 @@ public class ReservationPageTest extends BaseTest {
     public void setSurnameTest() {
         try {
             reservationPage.setSurname();
+            logger.info("setSurnameTest OK");
         }
         catch (Throwable ex) {
             Assert.fail();
+            logger.error("setSurnameTest NOK");
         }
     }
 
@@ -52,9 +60,11 @@ public class ReservationPageTest extends BaseTest {
     public void setPublicIdTest() {
         try {
             reservationPage.setPublicId();
+            logger.info("setPublicIdTest OK");
         }
         catch (Throwable ex) {
             Assert.fail();
+            logger.error("setPublicIdTest NOK");
         }
     }
 
@@ -62,9 +72,11 @@ public class ReservationPageTest extends BaseTest {
     public void setBirthdateDayTest() {
         try {
             reservationPage.setBirthdateDay();
+            logger.info("setBirthdateDayTest OK");
         }
         catch (Throwable ex) {
             Assert.fail();
+            logger.error("setBirthdateDayTest NOK");
         }
     }
 
@@ -72,9 +84,11 @@ public class ReservationPageTest extends BaseTest {
     public void setBirthdateMonthTest() {
         try {
             reservationPage.setBirthdateMonth();
+            logger.info("setBirthdateMonthTest OK");
         }
         catch (Throwable ex) {
             Assert.fail();
+            logger.error("setBirthdateMonthTest NOK");
         }
     }
 
@@ -82,9 +96,11 @@ public class ReservationPageTest extends BaseTest {
     public void setBirthdateYearTest() {
         try {
             reservationPage.setBirthdateYear();
+            logger.info("setBirthdateYearTest OK");
         }
         catch (Throwable ex) {
             Assert.fail();
+            logger.error("setBirthdateYearTest NOK");
         }
     }
 
@@ -92,9 +108,11 @@ public class ReservationPageTest extends BaseTest {
     public void setGenderTest() {
         try {
             reservationPage.setGender();
+            logger.info("setGenderTest OK");
         }
         catch (Throwable ex) {
             Assert.fail();
+            logger.error("setGenderTest NOK");
         }
     }
 
@@ -102,9 +120,11 @@ public class ReservationPageTest extends BaseTest {
     public void setCellPhoneTest() {
         try {
             reservationPage.setCellPhone();
+            logger.info("setCellPhoneTest OK");
         }
         catch (Throwable ex) {
             Assert.fail();
+            logger.error("setCellPhoneTest NOK");
         }
     }
 
@@ -112,9 +132,11 @@ public class ReservationPageTest extends BaseTest {
     public void clickPurchaseButtonTest() {
         try {
             reservationPage.clickPurchaseButton();
+            logger.info("clickPurchaseButtonTest OK");
         }
         catch (Throwable ex) {
             Assert.fail();
+            logger.error("clickPurchaseButtonTest NOK");
         }
     }
 }
