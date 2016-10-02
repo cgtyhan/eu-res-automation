@@ -2,6 +2,7 @@ package HomePageTest;
 
 import BaseTest.BaseTest;
 import HomePage.HomePage;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.ElementNotVisibleException;
 import org.openqa.selenium.NoSuchElementException;
 import org.testng.Assert;
@@ -21,15 +22,18 @@ public class HomePageTest extends BaseTest{
     @BeforeClass
     public void beforeClass() {
         homePage = new HomePage(driver);
+        logger = Logger.getLogger(HomePageTest.class.getName());
     }
 
     @Test(priority = 0)
     public void setOriginTest() {
         try {
             homePage.setOrigin();
+            logger.info("setOriginTest OK");
         }
         catch (Throwable ex) {
             Assert.fail();
+            logger.info("setOriginTest NOK");
         }
     }
 

@@ -10,7 +10,7 @@ import org.openqa.selenium.WebDriver;
 public class BaseTest {
 
     protected static WebDriver driver;
-    protected static Logger logger = Logger.getLogger(BaseTest.class.getName());
+    protected Logger logger;
 
     protected void driverWindowMax() {
         driver.manage().window().maximize();

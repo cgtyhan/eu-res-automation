@@ -2,7 +2,9 @@
 import BaseTest.BaseTest;
 import Utils.Configurations;
 import com.google.common.collect.ImmutableMap;
+import org.apache.commons.logging.Log;
 import org.apache.http.annotation.Immutable;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -23,6 +25,7 @@ public class RunAll extends BaseTest {
     public void beforeSuite() throws Throwable {
         //System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
         try {
+            logger = Logger.getLogger(RunAll.class.getName());
             System.setProperty("webdriver.chrome.driver", "/usr/local/share/chromedriver");
             String enuygunURL = "https://www.enuygun.com/ucak-bileti";
             driver = new ChromeDriver();
