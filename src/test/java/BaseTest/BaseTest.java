@@ -1,5 +1,7 @@
 package BaseTest;
 
+import org.apache.log4j.Logger;
+import org.jsoup.select.Evaluator;
 import org.openqa.selenium.WebDriver;
 
 /**
@@ -8,7 +10,7 @@ import org.openqa.selenium.WebDriver;
 public class BaseTest {
 
     protected static WebDriver driver;
-
+    protected static Logger logger = Logger.getLogger(BaseTest.class.getName());
 
     protected void driverWindowMax() {
         driver.manage().window().maximize();
@@ -16,10 +18,6 @@ public class BaseTest {
 
     protected void driverOpenUrl(String Url) {
         driver.navigate().to(Url);
-    }
-
-    protected String driverGetTitle() {
-        return driver.getTitle();
     }
 
     protected void waitForPageLoad(int x) {

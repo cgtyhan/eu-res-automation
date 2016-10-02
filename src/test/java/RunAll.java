@@ -22,17 +22,28 @@ public class RunAll extends BaseTest {
     @BeforeSuite
     public void beforeSuite() throws Throwable {
         //System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
-        System.setProperty("webdriver.chrome.driver", "/usr/local/share/chromedriver");
-        String enuygunURL = "https://www.enuygun.com/ucak-bileti";
-        driver = new ChromeDriver();
-        driver.manage().timeouts().setScriptTimeout(10, TimeUnit.SECONDS);
-        driverWindowMax();
-        driverOpenUrl(enuygunURL);
+        try {
+            System.setProperty("webdriver.chrome.driver", "/usr/local/share/chromedriver");
+            String enuygunURL = "https://www.enuygun.com/ucak-bileti";
+            driver = new ChromeDriver();
+            driver.manage().timeouts().setScriptTimeout(10, TimeUnit.SECONDS);
+            driverWindowMax();
+            driverOpenUrl(enuygunURL);
+            logger.info("beforeSuite Success");
+        }
+        catch (Throwable ex) {
+            logger.info("beforeSuite Fail");
+        }
     }
-
 
     @AfterSuite
     public void afterSuite() {
-        driverQuit();
+        try {
+            driverQuit();
+            logger.info("afterSuite Success");
+        }
+        catch (Throwable ex) {
+            logger.info("afterSuite Fail");
+        }
     }
 }

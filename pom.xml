@@ -15,6 +15,7 @@
         <testng.version>6.8</testng.version>
         <extentreports.version>2.41.0</extentreports.version>
         <imgscalr-lib.version>4.2</imgscalr-lib.version>
+        <log4j.version>1.2.17</log4j.version>
     </properties>
 
     <dependencies>
@@ -42,6 +43,12 @@
             <groupId>org.imgscalr</groupId>
             <artifactId>imgscalr-lib</artifactId>
             <version>${imgscalr-lib.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>${log4j.version}</version>
         </dependency>
 
     </dependencies>
