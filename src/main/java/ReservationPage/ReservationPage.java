@@ -58,6 +58,10 @@ public class ReservationPage extends Base {
         waitForLoad(10);
     }
 
+    public String getPnr() {
+        return getText(conf.getPnr());
+    }
+
 
 
 }

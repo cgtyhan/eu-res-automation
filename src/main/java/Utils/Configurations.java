@@ -40,6 +40,8 @@ public class Configurations {
     private String cellPhone;
     private String purchaseButton;
 
+    private String pnr;
+
 
     public Configurations() {
     }
@@ -72,6 +74,8 @@ public class Configurations {
         gender = props.getProperty("gender");
         cellPhone = props.getProperty("cellPhone");
         purchaseButton = props.getProperty("purchaseButton");
+
+        pnr = props.getProperty("pnr");
     }
 
     public static Configurations getInstance() {
@@ -168,5 +172,9 @@ public class Configurations {
 
     public String getResultList() {
         return resultList;
+    }
+
+    public String getPnr() {
+        return pnr;
     }
 }

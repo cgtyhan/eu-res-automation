@@ -139,4 +139,15 @@ public class ReservationPageTest extends BaseTest {
             logger.error("clickPurchaseButtonTest NOK");
         }
     }
+
+    @Test (priority = 10)
+    public void getPNRTest() {
+        try {
+            logger.info("getPNRTest OK" + reservationPage.getPnr());
+        }
+        catch (Throwable ex) {
+            Assert.fail();
+            logger.error("getPNRTest NOK");
+        }
+    }
 }
