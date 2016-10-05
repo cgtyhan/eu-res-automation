@@ -143,7 +143,7 @@ public class ReservationPageTest extends BaseTest {
     @Test (priority = 10)
     public void getPNRTest() {
         try {
-            logger.info("getPNRTest OK" + reservationPage.getPnr());
+            logger.info("getPNRTest OK, PNR: '" + reservationPage.getPnr()+ "'");
         }
         catch (Throwable ex) {
             Assert.fail();
