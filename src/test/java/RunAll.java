@@ -26,7 +26,7 @@ public class RunAll extends BaseTest {
         //System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
         try {
             logger = Logger.getLogger(RunAll.class.getName());
-            System.setProperty("webdriver.chrome.driver", "/usr/local/share/chromedriver");
+            System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
             String enuygunURL = "https://www.enuygun.com/ucak-bileti";
             driver = new ChromeDriver();
             driver.manage().timeouts().setScriptTimeout(10, TimeUnit.SECONDS);
